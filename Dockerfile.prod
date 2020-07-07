@@ -1,0 +1,3 @@
+# - ng build --prod
+FROM nginx:1.15
+COPY dist/angular-base-proyect /usr/share/nginx/html/
