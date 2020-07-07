@@ -1,0 +1,60 @@
+body{
+    background-image: url(../Globe_482002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.formulario {
+    background: rgba(0, 0, 0, .1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    color: white;
+}
+.ingresar {
+    background: #222a3f!important;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: white!important;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    transition: 0.5s ease-in;
+}
+.ingresar:hover{
+    color: white;
+}
+.registro{
+    background: #222a3f!important;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: white!important;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    transition: 0.5s ease-in;
+
+}
+.registro:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: black;
+}
+
+.foto1{
+    background-image: url(/Globe_482002.jpg);
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 700px;
+    color: white;
+
+}
+.content-center{
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}

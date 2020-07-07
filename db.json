@@ -1,0 +1,114 @@
+{
+  "usuarios": [
+    {
+      "tipo": "ADMINISTRADOR",
+      "email": "juan.maldonado.leon@gmail.com",
+      "username": "admin",
+      "password": "admin",
+      "id": 1
+    },
+    {
+      "tipo": "NORMAL",
+      "email": "wq",
+      "username": "test2",
+      "password": "qw",
+      "nombre": "prueba",
+      "apellido": "prueba",
+      "telefono": 11111111,
+      "id": 2
+    },
+    {
+      "nombre": "tomas",
+      "apellido": "maureira",
+      "username": "tmm1234",
+      "password": "1234",
+      "tipo": "NORMAL",
+      "email": "tomas.maureira@mayor.cl",
+      "id": 6
+    }
+  ],
+  "charlas": [
+    {
+      "id": 1,
+      "nombre": "Arquitectura de Aplicaciones Web",
+      "orador": "pepito",
+      "lugar": "auditorio",
+      "horario": "12:00-13:00",
+      "capacidad": "40"
+    },
+    {
+      "nombre": "prueba",
+      "orador": "pepito",
+      "lugar": "t",
+      "horario": "asdsad",
+      "capacidad": "50",
+      "id": 2
+    }
+  ],
+  "oradores": [
+    {
+      "id": 1,
+      "name": "hola",
+      "lastname": "que tal",
+      "especialidad": "webeo",
+      "charla": "test2",
+      "email": "askdjjlsadljls"
+    },
+    {
+      "id": 2,
+      "name": "pepe",
+      "lastname": "mujica",
+      "especialidad": "pulentismo",
+      "charla": "como ser pulento",
+      "email": "nose"
+    },
+    {
+      "name": "asd",
+      "lastname": "sad",
+      "especialidad": "asd",
+      "charla": "sad",
+      "email": "sad",
+      "id": 3
+    },
+    {
+      "name": "hola",
+      "lastname": "que tal",
+      "especialidad": "webeo",
+      "charla": "test2",
+      "email": "a",
+      "id": 4
+    },
+    {
+      "name": "hola",
+      "lastname": "que tal",
+      "especialidad": "webeo",
+      "charla": "test2",
+      "email": "r",
+      "id": 5
+    },
+    {
+      "name": "hola",
+      "lastname": "que tal",
+      "especialidad": "webeo",
+      "charla": "test2",
+      "email": "askdjjlsadljls",
+      "id": 6
+    },
+    {
+      "name": "ariuzxk",
+      "lastname": "Maureira",
+      "especialidad": "webeo",
+      "charla": "test2",
+      "email": "tomas.maureira@mayor.cl",
+      "id": 8
+    },
+    {
+      "name": "ariuzxk",
+      "lastname": "Maureira",
+      "especialidad": "webeo",
+      "charla": "hola",
+      "email": "tomy.chuncho17@gmail.com",
+      "id": 10
+    }
+  ]
+}
