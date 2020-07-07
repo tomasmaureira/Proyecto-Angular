@@ -1,0 +1,27 @@
+<barra-inicio></barra-inicio>
+<div>
+    
+    <h4 class="text-center">Nuestras charlas</h4>
+</div>
+<div class="card-body container">
+    <div class="container card-body">
+        <table class="table table-bordered table-responsive-md table-striped text-center">
+            <thead>
+                <th>Nombre Conferencia</th>
+                <th>Orador</th>
+                <th>Lugar</th>
+                <th>Horario</th>
+                <th>Capacidad</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let charla of charlas">
+                    <th>{{charla.nombre}}</th>
+                    <th>{{charla.orador}}</th>
+                    <th>{{charla.lugar}}</th>
+                    <th>{{charla.horario}}</th>
+                    <th>{{charla.capacidad}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

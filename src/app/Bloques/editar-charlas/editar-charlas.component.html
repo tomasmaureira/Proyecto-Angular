@@ -1,0 +1,36 @@
+<div class="d-flex flex-wrap flex-md-nowrap pt-3 pb-2 mb-3 border-bottom">
+    <hr>
+    <h1 class="text-center"> Editar Conferencia </h1>
+    <hr>
+</div>
+<div class="card-body container">
+    <div class="card-header container">
+        <h5>Datos de la Conferencia</h5>
+    </div>
+    <hr>
+    <form class="container">
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="nombre" [(ngModel)]="nombre">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="orador" [(ngModel)]="orador">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="lugar" [(ngModel)]="lugar">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="horario" [(ngModel)]="horario">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="capacidad" [(ngModel)]="capacidad">
+        </div>
+        <div class="container">
+            <span class="col-8" (click)="editarCharla()">
+                <button type="button" class="btn btn-success btn-lg btn-block">Cambiar</button>
+            </span>
+            <a routerLink="../../">
+                <button type="button" class="btn btn-danger btn-primary btn-lg btn-block">Volver</button>
+            </a>
+        </div>
+    </form>
+</div>

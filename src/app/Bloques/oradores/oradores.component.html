@@ -1,0 +1,28 @@
+<barra-inicio></barra-inicio>
+<br>
+<div class="header container">
+    <h4 class="text-center">Nuestros Oradores</h4>
+</div>
+    <div class="card-body">
+    <div class="container">
+        <table class="table table-bordered table-responsive-md text-center">
+            <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Especialidad</th>
+                <th>Charla</th>
+                <th>Email</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let orador of oradores">
+                <th>{{orador.name}}</th>
+                <th>{{orador.lastname}}</th>
+                <th>{{orador.especialidad}}</th>
+                <th>{{orador.charla}}</th>
+                <th>{{orador.email}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>   
+

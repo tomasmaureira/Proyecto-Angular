@@ -1,0 +1,39 @@
+<div class="card">
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Manejo Conferencias</h3>
+  <div class="card-body">
+    <a routerLink="nueva-charla" class="table-remove"><button type="button"
+      class="btn btn-success btn-rounded btn-md my-0">Nuevo</button></a>
+    <div id="table" class="table-editable">
+      <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+            class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+          <tr>
+            <th class="text-center">Id Conferencia</th>
+            <th class="text-center">Nombre Conferencia</th>
+            <th class="text-center">Orador</th>
+            <th class="text-center">Lugar</th>
+            <th class="text-center">Horario</th>
+            <th class="text-center">Capacidad</th>
+            <th class="text-center">Editar</th>
+            <th class="text-center">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let charla of charlas">
+            <td class="pt-3-half">{{charla.id}}</td>
+            <td class="pt-3-half">{{charla.nombre}}</td>
+            <td class="pt-3-half">{{charla.orador}}</td>
+            <td class="pt-3-half">{{charla.lugar}}</td>
+            <td class="pt-3-half">{{charla.horario}}</td>
+            <td class="pt-3-half">{{charla.capacidad}}</td>
+            <td><a routerLink="editar-charlas/{{charla.id}}" class="table-remove"><button type="button"
+              class="btn btn-warning btn-rounded btn-sm my-0">Editar</button></a></td>
+            <td><span class="table-remove"><button type="button" class="btn  btn-rounded btn-danger btn-sm my-0" (click)="eliminarCharla(charla.id)">Remove</button></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

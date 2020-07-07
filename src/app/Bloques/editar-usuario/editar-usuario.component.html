@@ -1,0 +1,48 @@
+<div class="d-flex flex-wrap flex-md-nowrap pt-3 pb-2 mb-3 border-bottom">
+    <hr>
+    <h1 class="text-center"> Editar Orador </h1>
+    <hr>
+</div>
+<div class="card-body container">
+    <div class="card-header container">
+        <h5>Datos del Usuario</h5>
+    </div>
+    <hr>
+    <form class="container">
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="name" [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="lastname"
+                [(ngModel)]="lastname">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="username"
+                [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="password"
+                [(ngModel)]="password">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="charla" [(ngModel)]="charla">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="tipo" [(ngModel)]="tipo">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="email" [(ngModel)]="email">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control text-center" name="telefono" [(ngModel)]="telefono">
+        </div>
+        <div class="container">
+            <span class="col-8" (click)="editarUsuario()">
+                <button type="button" class="btn btn-success btn-lg btn-block">Cambiar</button>
+            </span>
+            <a routerLink="../../">
+                <button type="button" class="btn btn-danger btn-primary btn-lg btn-block">Volver</button>
+            </a>
+        </div>
+    </form>
+</div>

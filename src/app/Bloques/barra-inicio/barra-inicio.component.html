@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand"  style="color: white;" routerLink="/inicio">Hola Bienvenido {{user.nombre}}</a>
+    <ul class="nav justify-content-end">
+       
+        <li class="nav-item">
+            <a class="nav-link" style="color: white;" routerLink="/inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: white;" routerLink="/calendario">Conferencias</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: white;" routerLink="/oradores">Oradores</a>
+        </li>
+        <div>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" routerLink="/login">Inicia Sesion</a>
+            </li>
+        </div>
+        <li class="nav-item">
+            <a class="nav-link" style="color: white;" (click)=logout()>Cerrar Sesion</a>
+        </li>
+    </ul>
+</nav>

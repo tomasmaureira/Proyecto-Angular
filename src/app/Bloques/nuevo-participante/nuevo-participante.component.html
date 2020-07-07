@@ -1,0 +1,44 @@
+<br>
+<div class="container">
+    <div class="d-flex flex-wrap flex-md-nowrap pt-3 pb-2 mb-3 border-bottom">
+        <hr>
+        <h1 class="text-center"> Datos del Usuario </h1>
+        <hr>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre" name="nombre" [(ngModel)]="nombre">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Apellido" name="apellido" [(ngModel)]="apellido">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre de Usuario" name="username"
+                    [(ngModel)]="username">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Contraseña" name="password"
+                    [(ngModel)]="password">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Charla" name="charla" [(ngModel)]="charla">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Tipo de Usuario" name="tipo" [(ngModel)]="tipo">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="email" name="email" [(ngModel)]="email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Numero Telefonico" name="telefono" [(ngModel)]="telefono">
+            </div>
+            <div class="col">
+                <span class="col-8" (click)="crearUsuario()"><button type="button"
+                        class="btn btn-success btn-rounded btn-md my-0 btn-block">Agregar</button></span>
+                <a routerLink="../"><button type="button"
+                        class="btn btn-danger btn-rounded btn-md my-0 btn-block">Volver</button></a>
+            </div>
+        </form>
+    </div>
+</div>

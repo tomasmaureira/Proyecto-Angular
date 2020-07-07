@@ -1,0 +1,47 @@
+<div class="card">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Participantes de las Charlas</h3>
+    <div class="card-body">
+      <a routerLink="nuevo-participante" class="table-remove"><button type="button"
+        class="btn btn-success btn-rounded btn-md my-0">Nuevo</button></a>
+      <div id="table" class="table-editable">
+        <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+              class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+        <table class="table table-bordered table-responsive-md table-striped text-center">
+          <thead>
+            <tr>
+              <th class="text-center">ID</th>
+              <th class="text-center">Nombre</th>
+              <th class="text-center">Apellido</th>
+              <th class="text-center">Nombre de Usuario</th>
+              <th class="text-center">Contraseña</th>
+              <th class="text-center">Tipo</th>
+              <th class="text-center">Charla</th>
+              <th class="text-center">Correo</th>
+              <th class="text-center">Numero Telefonico</th>
+              <th class="text-center">Editar</th>
+              <th class="text-center">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let usuario of usuarios">
+              <td class="pt-3-half">{{usuario.id}}</td>
+              <td class="pt-3-half">{{usuario.nombre}}</td>
+              <td class="pt-3-half">{{usuario.apellido}}</td>
+              <td class="pt-3-half">{{usuario.username}}</td>
+              <td class="pt-3-half">{{usuario.password}}</td>
+              <td class="pt-3-half">{{usuario.tipo}}</td>
+              <td class="pt-3-half">{{usuario.charla}}</td>
+              <td class="pt-3-half">{{usuario.email}}</td>
+              <td class="pt-3-half">{{usuario.telefono}}</td>
+              <td><a routerLink="editar-usuario/{{usuario.id}}" class="table-remove"><button type="button"
+                class="btn btn-warning btn-rounded btn-sm my-0">Editar</button></a></td>
+              <td>
+                <span class="table-remove"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0" (click)="eliminarUsuario(usuario.id)">Remove</button></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
