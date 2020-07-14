@@ -28,7 +28,6 @@ export class NuevoOradorComponent implements OnInit {
     orador.charla = this.charla;
     orador.email = this.email;
     if (this.datoscompletos(true)) {
-      if (this.oradorExistente(false))
         this.services.crearOrador(orador).subscribe(
           data => {
             alert("Orador agregado!");
