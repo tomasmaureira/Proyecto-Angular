@@ -10,21 +10,21 @@ export class CharlasService {
   constructor( private http: HttpClient) { }
 
   obtenerTodasLasCharlas() {
-    return this.http.get<Charla[]>("http://localhost:3000/charlas");
+    return this.http.get<Charla[]>("https://conferencias-json-kbefbqorma-ue.a.run.app/charlas");
   }
   obtenerCharlaPorId(id: number) {
-    return this.http.get<Charla>("http://localhost:3000/charlas/" + id);
+    return this.http.get<Charla>("https://conferencias-json-kbefbqorma-ue.a.run.app/charlas/" + id);
   }
   crearCharla(user: Charla) {
-    return this.http.post("http://localhost:3000/charlas", user);
+    return this.http.post("https://conferencias-json-kbefbqorma-ue.a.run.app/charlas", user);
   }
   editarCharla(user: Charla) {
-    return this.http.put("http://localhost:3000/charlas/" + user.id, user);
+    return this.http.put("https://conferencias-json-kbefbqorma-ue.a.run.app/charlas/" + user.id, user);
   }
   eliminarCharla(id: number){
-    return this.http.delete("http://localhost:3000/charlas/" + id);
+    return this.http.delete("https://conferencias-json-kbefbqorma-ue.a.run.app/charlas/" + id);
   }
   obtenerNombreCharla(nombre:string){
-    return this.http.get<Charla>("http://localhost:3000/charlas?nombre=" + nombre);
+    return this.http.get<Charla>("https://conferencias-json-kbefbqorma-ue.a.run.app/charlas?nombre=" + nombre);
   }
 }
