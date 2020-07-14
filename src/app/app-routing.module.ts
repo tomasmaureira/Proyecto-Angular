@@ -23,7 +23,7 @@ import { AutenticacionGuard } from './guards/autenticacion.guard';
 const rutas: Routes = [
   { path: 'barra-inicio', component: BarraInicioComponent },
   { path: 'inicio', component: InicioComponent, },
-  { path: 'login', component: LoginComponent, },
+  { path: '', component: LoginComponent, },
   { path: 'oradores', component: OradoresComponent, },
   { path: 'registro', component: RegistroComponent, },
   { path: 'calendario', component: CalendarioComponent },
